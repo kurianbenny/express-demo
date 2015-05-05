@@ -15,6 +15,6 @@ app.post('/add',function (req,res) {
 	// var num2 = parseInt(req.body.pwd);
 	var num1 = req.body.email;
 	var num2 = req.body.password;
-	res.send({'User':num1});
+	res.send({'password':num2});
 
 });
