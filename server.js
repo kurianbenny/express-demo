@@ -1,6 +1,8 @@
 var express = require('express');
 var bodyParser=require('body-parser');
 var app = express();
+var mongoclient=require('mongodb').MongoClient;
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,6 +17,6 @@ app.post('/add',function (req,res) {
 	// var num2 = parseInt(req.body.pwd);
 	var num1 = req.body.email;
 	var num2 = req.body.password;
-	res.send({'password':num2});
+	res.send({'User':num1});
 
 });
