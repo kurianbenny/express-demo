@@ -1,16 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="data:;base64,=">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 </head>
+
+
+
 <body>
-	<form action="/add" method="POST">
-		<input type="number" name="num1" /><br/>
-		<input type="number" name="num2" /><br/>
-		<button type="submit">Submit</button>
-	</form>
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1>Hi welcome node js tutorials
+		</div>
+
+
+	<div class="row">
+
+
+		
+		<div class="col-sm-4">
+
+			<div class="well">
+
+			 <form role="form" action="/add" method="POST" class="frm">
+
+    			<div class="form-group" >
+      				<label for="user">Email:</label>
+      					<input type="email" class="form-control" id="user" placeholder="Enter email">
+    			</div>
+    			<div class="form-group">
+      				<label for="pwd">Password:</label>
+      				<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    			</div>
+   				 <div class="checkbox">
+      				<label><input type="checkbox"> Remember me</label>
+    			</div>
+    				<button type="submit" class="btn btn-default">Submit</button>
+
+  			</form>
+  			</div>
+
+		</div>
+
+		<div class="col-sm-12">
+			<div class="well"><h3>This is second row</h3></div>
+		</div>
+
+	</div>
+
+
+	</div>
+
+
+
 </body>
+
 </html>
