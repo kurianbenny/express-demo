@@ -19,10 +19,10 @@ app.post('/add',function (req,res) {
 		if(err) throw err;
 		console.log("connected to database");
 
-		var username = req.body.email;
+		var username1 = req.body.email;
 		var password = req.body.password;
 
-		var document={username:username,password:password};
+		var document={username:username1,password:password};
 
 		db.collection('record').insert(document,{_id:1}, function(err, records) {
 				if (err) throw err;
